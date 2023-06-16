@@ -32,11 +32,6 @@ def get_jobs():
                 if unfamiliar_skills not in skills:
                     print(company_name, skills, link)
                     sheet.append([company_name, skills, link])
-                    # with open(f'posts/{index}.txt', 'w') as f:
-                    #     f.write(f"Company Name: {company_name.strip()} \n")
-                    #     f.write(f"Skills: {skills.strip()} \n")
-                    #     f.write(f"More Info: {link}")
-                    #     print(f"File saved: {index}")
 
     except Exception as e:
         print(e)
